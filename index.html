@@ -1,0 +1,180 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="WEBMASTER UZ — O‘zbekiston bo‘ylab biznesingiz uchun zamonaviy veb-saytlar yaratamiz.">
+  <title>SAYT YARATISH | WEBMASTER UZ</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:Arial,sans-serif;background:#080d19;color:#f5f7ff;line-height:1.6}
+    a{text-decoration:none;color:inherit}
+    .container{width:min(1120px,92%);margin:auto}
+    header{position:sticky;top:0;z-index:10;background:#080d19ee;border-bottom:1px solid #ffffff14;backdrop-filter:blur(12px)}
+    nav{height:76px;display:flex;align-items:center;justify-content:space-between}
+    .logo{font-size:21px;font-weight:900;letter-spacing:1px}
+    .logo span{color:#6b8cff}
+    .links{display:flex;gap:26px;align-items:center;color:#bdc7dd;font-size:14px}
+    .btn{display:inline-block;background:linear-gradient(110deg,#5278ff,#9b5cff);padding:13px 22px;border-radius:10px;color:white;font-weight:700;border:0;cursor:pointer}
+    .hero{padding:105px 0 90px;background:radial-gradient(ellipse at 80% 20%,#334eaa44,transparent 45%),radial-gradient(ellipse at 10% 80%,#743bc033,transparent 35%)}
+    .tag{display:inline-block;border:1px solid #708cff66;color:#aebfff;padding:7px 13px;border-radius:30px;font-size:12px;letter-spacing:1px}
+    h1{font-size:clamp(40px,7vw,72px);line-height:1.08;max-width:800px;margin:25px 0}
+    .gradient{background:linear-gradient(90deg,#80a1ff,#c08aff);color:transparent;background-clip:text}
+    .hero p{color:#aeb9d0;font-size:18px;max-width:650px;margin-bottom:30px}
+    .hero-actions{display:flex;gap:13px;flex-wrap:wrap}
+    .outline{border:1px solid #6579b4;padding:12px 21px;border-radius:10px;color:#e0e7ff}
+    .stats{display:flex;gap:45px;flex-wrap:wrap;margin-top:65px}
+    .stats strong{display:block;font-size:24px;color:white}
+    .stats span{font-size:13px;color:#8996b2}
+    section{padding:85px 0}
+    .heading{text-align:center;margin-bottom:42px}
+    .heading small{color:#8da5ff;letter-spacing:2px;font-weight:bold}
+    h2{font-size:clamp(29px,4vw,43px);margin:9px 0}
+    .heading p,.muted{color:#9eabc4}
+    .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+    .card{background:#101a2d;border:1px solid #ffffff13;border-radius:17px;padding:27px;transition:.25s}
+    .card:hover{transform:translateY(-5px);border-color:#718bff88}
+    .emoji{font-size:30px;margin-bottom:16px}
+    .card h3{font-size:20px;margin-bottom:10px}
+    .card p{font-size:14px;color:#a7b3cb}
+    .portfolio{background:#0c1424}
+    .demo{min-height:175px;border-radius:12px;padding:20px;display:flex;flex-direction:column;justify-content:center;margin-bottom:18px}
+    .demo b{font-size:25px}
+    .demo span{font-size:12px;opacity:.8}
+    .one{background:linear-gradient(130deg,#6a332d,#d28a4d)}
+    .two{background:linear-gradient(130deg,#1b4d68,#397fa4)}
+    .three{background:linear-gradient(130deg,#38255e,#8c62c9)}
+    .price{font-size:25px;font-weight:900;color:#a9baff;margin:15px 0}
+    .card ul{padding-left:18px;color:#b8c3d9;font-size:14px;margin:16px 0 23px}
+    .order{background:radial-gradient(ellipse at 50% 0%,#364d9944,transparent 65%)}
+    form{max-width:570px;margin:auto;background:#111b30;padding:30px;border:1px solid #ffffff18;border-radius:18px;display:grid;gap:14px}
+    input,select,textarea{width:100%;padding:15px;border-radius:9px;background:#080f1e;border:1px solid #34415d;color:white;font:inherit}
+    input:focus,select:focus,textarea:focus{outline:1px solid #8098ff}
+    label{font-size:13px;color:#c4cde0}
+    form button{font-size:16px}
+    .contact{text-align:center;background:#101a2d;border-radius:20px;padding:45px 20px}
+    footer{padding:30px 0;border-top:1px solid #ffffff15;color:#8996ae;font-size:13px}
+    .foot{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    @media(max-width:750px){
+      .links a:not(.btn){display:none}
+      .grid{grid-template-columns:1fr}
+      .hero{padding:75px 0}
+      section{padding:65px 0}
+      .stats{gap:25px}
+      form{padding:20px}
+    }
+  </style>
+</head>
+<body>
+<header>
+  <nav class="container">
+    <a class="logo" href="#">WEBMASTER <span>UZ.</span></a>
+    <div class="links">
+      <a href="#services">Xizmatlar</a>
+      <a href="#portfolio">Namunalar</a>
+      <a href="#prices">Narxlar</a>
+      <a class="btn" href="#order">Buyurtma berish</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="container">
+      <span class="tag">✦ O‘ZBEKISTON BO‘YLAB WEB XIZMATLAR</span>
+      <h1>Biznesingizga <span class="gradient">zamonaviy sayt</span> kerakmi?</h1>
+      <p>G‘oyangizni internetdagi kuchli taqdimotga aylantiramiz. Chiroyli dizayn, qulay foydalanish va mijozlaringiz uchun oson aloqa.</p>
+      <div class="hero-actions">
+        <a class="btn" href="#order">Sayt buyurtma qilish ↗</a>
+        <a class="outline" href="#portfolio">Namunalarni ko‘rish</a>
+      </div>
+      <div class="stats">
+        <div><strong>24/7</strong><span>Onlayn taqdimot</span></div>
+        <div><strong>100%</strong><span>Mobil qurilmalarga mos</span></div>
+        <div><strong>UZ</strong><span>Butun O‘zbekiston bo‘ylab</span></div>
+      </div>
+    </div>
+  </div>
+
+  <section id="services">
+    <div class="container">
+      <div class="heading"><small>BIZNING XIZMATLAR</small><h2>Biznesingiz uchun <span class="gradient">to‘g‘ri yechim</span></h2><p>Har xil biznes va loyihalar uchun veb-saytlar.</p></div>
+      <div class="grid">
+        <article class="card"><div class="emoji">🌐</div><h3>Landing page</h3><p>Mahsulot yoki xizmatingizni tanishtiruvchi zamonaviy bir sahifali sayt.</p></article>
+        <article class="card"><div class="emoji">🏢</div><h3>Biznes sayti</h3><p>Kompaniyangiz, xizmatlaringiz va faoliyatingiz haqida to‘liq ma’lumot.</p></article>
+        <article class="card"><div class="emoji">🛒</div><h3>Internet do‘kon</h3><p>Mahsulotlaringizni namoyish etish va buyurtmalarni qabul qilish platformasi.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="portfolio" id="portfolio">
+    <div class="container">
+      <div class="heading"><small>DEMO LOYIHALAR</small><h2>Saytlarimizdan <span class="gradient">namunalar</span></h2><p>Quyidagilar dizayn yo‘nalishini ko‘rsatuvchi namunaviy konseptlardir.</p></div>
+      <div class="grid">
+        <article class="card"><div class="demo one"><span>RESTAURANT</span><b>Delicious moments.</b><span>Ta’m va kayfiyat bir joyda.</span></div><h3>Restoran sayti</h3><p>Kafe va restoranlar uchun.</p></article>
+        <article class="card"><div class="demo two"><span>EDUCATION</span><b>Kelajak shu yerdan.</b><span>O‘rganing. Rivojlaning.</span></div><h3>O‘quv markazi</h3><p>Kurslar va ta’lim markazlari uchun.</p></article>
+        <article class="card"><div class="demo three"><span>ONLINE STORE</span><b>Shop your style.</b><span>Mahsulotlar bir joyda.</span></div><h3>Internet do‘kon</h3><p>Onlayn savdo uchun.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <section id="prices">
+    <div class="container">
+      <div class="heading"><small>BOSHLANG‘ICH NARXLAR</small><h2>O‘zingizga mos <span class="gradient">paketni tanlang</span></h2><p>Yakuniy narx loyiha talablariga qarab kelishiladi.</p></div>
+      <div class="grid">
+        <article class="card"><h3>START</h3><div class="price">600 000 so‘mdan</div><p>Landing page</p><ul><li>Bir sahifali sayt</li><li>Mobil qurilmalarga mos</li><li>Aloqa tugmalari</li></ul><a class="btn" href="#order">Buyurtma berish</a></article>
+        <article class="card"><h3>BUSINESS</h3><div class="price">1 200 000 so‘mdan</div><p>Biznes sayti</p><ul><li>Bir nechta bo‘lim</li><li>Individual dizayn</li><li>Telegram aloqa</li></ul><a class="btn" href="#order">Buyurtma berish</a></article>
+        <article class="card"><h3>PRO</h3><div class="price">1 800 000 so‘mdan</div><p>Internet do‘kon</p><ul><li>Mahsulot katalogi</li><li>Buyurtma formasi</li><li>Kelishilgan funksiyalar</li></ul><a class="btn" href="#order">Buyurtma berish</a></article>
+      </div>
+    </div>
+  </section>
+
+  <section class="order" id="order">
+    <div class="container">
+      <div class="heading"><small>BUYURTMA BERISH</small><h2>Saytingizni <span class="gradient">birgalikda yaratamiz!</span></h2><p>Ma’lumotlaringizni qoldiring. Telegram orqali bog‘lanamiz.</p></div>
+      <form id="orderForm">
+        <div><label>Ismingiz</label><input name="name" placeholder="Ismingizni kiriting" required></div>
+        <div><label>Telefon raqamingiz</label><input name="phone" type="tel" placeholder="+998 90 123 45 67" required></div>
+        <div><label>Qanday sayt kerak?</label><select name="type" required><option value="">Sayt turini tanlang</option><option>Landing page</option><option>Biznes sayti</option><option>Internet do‘kon</option><option>Boshqa loyiha</option></select></div>
+        <div><label>Loyiha haqida (ixtiyoriy)</label><textarea name="details" rows="3" placeholder="Qanday sayt kerakligini qisqacha yozing"></textarea></div>
+        <button class="btn" type="submit">Buyurtmani Telegramga yuborish ↗</button>
+        <small class="muted">Tugmani bosgach, Telegram ochiladi. Xabarni yuborishni o‘zingiz tasdiqlaysiz.</small>
+      </form>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="contact">
+        <small class="tag">WEBMASTER UZ</small>
+        <h2>Biznesingizni internetga olib chiqing!</h2>
+        <p class="muted">Savollaringiz bormi? Biz bilan bog‘laning.</p><br>
+        <a class="btn" href="https://t.me/erkinboyevlar_31" target="_blank" rel="noopener">Telegram orqali yozish ↗</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container foot">
+    <span>© 2026 WEBMASTER UZ. Barcha huquqlar himoyalangan.</span>
+    <span>O‘zbekiston bo‘ylab veb-sayt yaratish xizmati.</span>
+  </div>
+</footer>
+
+<script>
+document.getElementById("orderForm").addEventListener("submit",function(e){
+  e.preventDefault();
+  const d=new FormData(this);
+  const msg="YANGI BUYURTMA — WEBMASTER UZ\n"+
+    "Ism: "+d.get("name")+"\n"+
+    "Telefon: "+d.get("phone")+"\n"+
+    "Sayt turi: "+d.get("type")+"\n"+
+    "Izoh: "+(d.get("details")||"Kiritilmagan");
+  window.open("https://t.me/erkinboyevlar_31?text="+encodeURIComponent(msg),"_blank");
+});
+</script>
+</body>
+</html>
